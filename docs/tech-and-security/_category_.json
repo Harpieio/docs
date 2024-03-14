@@ -1,7 +1,7 @@
 {
-  "label": "Tutorial - Basics",
-  "position": 12,
-  "collapsible": false,
+  "label": "Tech & Security",
+  "position": 3,
+  "collapsible": true,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."
