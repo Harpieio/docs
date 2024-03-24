@@ -1,28 +1,144 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --ifm-color-primary: #DB7434;
-  --ifm-color-primary-dark: #dd712d;
-  --ifm-color-primary-darker: #dd6c26;
-  --ifm-color-primary-darkest: #ce6422;
-  --ifm-color-primary-light: #da773b;
-  --ifm-color-primary-lighter: #dd8148;
-  --ifm-color-primary-lightest: #e08e5a;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #df8751;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ifm-color-primary: #e0c3ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: Aeonik;
+  --ifm-navbar-background-color: #2e015b;
+  /* --ifm-background-color: #06000C; */
+  --ifm-font-color-base: white;
+  --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
+  --ifm-color-emphasis-100: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-200: var(--ifm-color-gray-800);
+  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
+  --ifm-color-emphasis-400: var(--ifm-color-gray-600);
+  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
+  --ifm-color-emphasis-600: var(--ifm-color-gray-400);
+  --ifm-color-emphasis-700: var(--ifm-color-gray-300);
+  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-100);
+  --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
+  --ifm-background-color: #06000C !important;
+  --ifm-background-surface-color: #06000C;
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+  --ifm-color-content: #e3e3e3;
+  --ifm-color-content-secondary: rgba(255, 255, 255, 1);
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
+    hue-rotate(149deg) brightness(99%) contrast(95%);
+  --ifm-code-background: rgba(255, 255, 255, 0.1);
+  --ifm-scrollbar-track-background-color: #444444;
+  --ifm-scrollbar-thumb-background-color: #686868;
+  --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.07);
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+  --ifm-color-primary-contrast-background: rgb(16, 36, 69);
+  --ifm-color-primary-contrast-foreground: rgb(235, 242, 252);
+  --ifm-color-secondary-contrast-background: rgb(71, 71, 72);
+  --ifm-color-secondary-contrast-foreground: rgb(253, 253, 254);
+  --ifm-color-success-contrast-background: rgb(0, 49, 0);
+  --ifm-color-success-contrast-foreground: rgb(230, 246, 230);
+  --ifm-color-info-contrast-background: rgb(25, 60, 71);
+  --ifm-color-info-contrast-foreground: rgb(238, 249, 253);
+  --ifm-color-warning-contrast-background: rgb(77, 56, 0);
+  --ifm-color-warning-contrast-foreground: rgb(255, 248, 230);
+  --ifm-color-danger-contrast-background: rgb(75, 17, 19);
+  --ifm-color-danger-contrast-foreground: rgb(255, 235, 236);
+  --ifm-menu-color: var(--ifm-color-emphasis-1000);
+  --ifm-menu-link-sublist-icon-filter: brightness(0) invert(1);
+  --ifm-menu-color-active: #BA4AFF;
+}
+
+.navbar {
+  border-bottom: 2px solid #472c71;
+}
+
+.navbar__logo {
+  height: 25px;
+}
+
+.navbar__title {
+  color: #9b7bbc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar__item {
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.button-container .DocSearch-Button-Keys {
+  display: none;
+}
+
+.button-container .DocSearch-Button {
+  width: 220px;
+}
+
+.button-container .DocSearch-Button-Placeholder {
+  display: block !important;
+  white-space: nowrap;
+}
+
+.navbar-sidebar {
+  background-color: #10001f;
+}
+
+.navbar-sidebar .menu__link--active {
+  color: var(--ifm-color-primary);
+}
+
+.menu__link {
+  font-weight: 400;
 }

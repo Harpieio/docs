@@ -4,34 +4,35 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Harpie',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "The On-Chain Firewall | Harpie",
+  tagline:
+    "Outsmart hackers and scammers by blocking their transactions before they drain your wallet. Never be a victim again.",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://harpie.docs",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Harpie', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: "Harpie", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   plugins: [
@@ -46,108 +47,127 @@ const config = {
         },
       };
     },
+    "@docusaurus/theme-live-codeblock",
   ],
-  
+
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "classic",
+      {
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Harpieio/docs/blob/main',
+          sidebarPath: "./sidebars.js",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Harpieio/tree',
+          // add this after its deployed
+          // feedOptions: {
+          //   type: 'all',
+          //   copyright: `Copyright © ${new Date().getFullYear()} Harpie Blockchain Solutions, Inc. Built with Docusaurus.`,
+          //   createFeedItems: async (params) => {
+          //     const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+          //     return defaultCreateFeedItems({
+          //       // keep only the 10 most recent blog posts in the feed
+          //       blogPosts: blogPosts.filter((item, index) => index < 10),
+          //       ...rest,
+          //     });
+          //   },
+          // },
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Harpie Docs',
+        title: "docs",
         logo: {
-          alt: 'Harpie Logo',
-          src: 'img/harpie-glow.png',
+          alt: "Harpie Logo",
+          src: "img/Harpie-Aeonik-Logo.svg",
+          href: "/",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'docSidebar',
-            position: 'left',
-            label: 'Docs',
+            type: "docSidebar",
+            sidebarId: "docSidebar",
+            position: "left",
+            label: "Getting Started",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: "https://harpie.io",
+            label: "For individuals",
+            position: "left",
           },
+          {
+            to: "https://harpie.io",
+            label: "For enterprise",
+            position: "left",
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
-        style: 'dark',
+        logo: {
+          alt: "Harpie Logo",
+          src: "/img/Harpie-Aeonik-Logo.svg",
+          href: "/",
+        },
         links: [
           {
-            title: 'Docs',
+            title: "Footer",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "HARPIE",
+                href: "https://harpie.io",
+              },
+              {
+                label: "COMMUNITY",
+                href: "https://discord.gg/WfBtxZfp85",
+              },
+              {
+                label: "ENTERPRISE",
+                href: "https://harpie.io/rpc/enterprise",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "SubFooter",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Privacy",
+                href: "https://harpie.io/privacy",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Terms of Use",
+                href: "https://harpie.io/terms",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Press & Media",
+                href: "https://harpie.notion.site/Harpie-in-the-News-fe64afea0c3c4b1b8f2a76723cc6d491",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Harpie Blockchain Solutions, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        theme: prismThemes.duotoneDark,
+        additionalLanguages: ["java"],
+      },
+      algolia: {
+        contextualSearch: true,
+        // The application ID provided by Algolia
+        appId: 'YOUR_APP_ID',
+        // Public API key: it is safe to commit it
+        apiKey: 'YOUR_SEARCH_API_KEY',
+        indexName: 'harpie',
+        translations: {
+          placeholder: "Search for a topic"
+        }
       },
     }),
 };
