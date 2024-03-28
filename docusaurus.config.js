@@ -87,7 +87,7 @@ const config = {
         title: "docs",
         logo: {
           alt: "Harpie Logo",
-          src: "img/Harpie-Aeonik-Logo.svg",
+          src: "/docs/img/Harpie-Aeonik-Logo.svg",
           href: "/",
         },
         items: [
@@ -113,7 +113,7 @@ const config = {
       footer: {
         logo: {
           alt: "Harpie Logo",
-          src: "/img/Harpie-Aeonik-Logo.svg",
+          src: "/docs/img/Harpie-Aeonik-Logo.svg",
           href: "/",
         },
         links: [

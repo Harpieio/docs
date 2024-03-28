@@ -21,7 +21,7 @@ function HomepageHeader() {
         </h2>
         <div className="flex flex-col gap-6 sm:gap-10 sm:items-center sm:flex-row button-container">
           <Link
-            href="/docs/official-contract-addresses"
+            href="/docs/docs/official-contract-addresses"
             className="flex px-8 text-black py-2.5 cursor-pointer bg-[#D694FF] rounded-sm w-max"
           >
             <span className="flex items-center gap-2 mx-auto text-sm font-semibold whitespace-nowrap flex-nowrap md:text-base lg:text-lg">
