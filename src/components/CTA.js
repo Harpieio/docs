@@ -17,7 +17,7 @@ export default function CTA() {
             className="mb-4 px-6 md:px-9 w-max flex xs:flex-nowrap py-2.5 cursor-pointer bg-gradient-to-l to-harpie via-harpie from-orange-400 rounded-3xl hover:shadow-[0px_0px_26px_-1px_#FF8C50CC] duration-150"
             href="https://harpie.io/onboarding/basic"
           >
-            <span className="flex items-center gap-2 mx-auto text-sm whitespace-nowrap xs:flex-nowrap flex-nowrap md:text-base lg:text-lg">
+            <span className="flex items-center gap-2 mx-auto text-sm text-white whitespace-nowrap xs:flex-nowrap flex-nowrap md:text-base lg:text-lg">
               GET STARTED FOR FREE
             </span>
           </Link>
