@@ -87,7 +87,7 @@ const config = {
         title: "docs",
         logo: {
           alt: "Harpie Logo",
-          src: "/docs/img/Harpie-Aeonik-Logo.svg",
+          src: "/img/Harpie-Aeonik-Logo.svg",
           href: "/",
         },
         items: [
@@ -113,7 +113,7 @@ const config = {
       footer: {
         logo: {
           alt: "Harpie Logo",
-          src: "/docs/img/Harpie-Aeonik-Logo.svg",
+          src: "/img/Harpie-Aeonik-Logo.svg",
           href: "/",
         },
         links: [
@@ -159,12 +159,12 @@ const config = {
         additionalLanguages: ["java"],
       },
       algolia: {
-        contextualSearch: true,
+        contextualSearch: false,
         // The application ID provided by Algolia
-        appId: 'YOUR_APP_ID',
+        appId: '2HGHXI5ATT',
         // Public API key: it is safe to commit it
-        apiKey: 'YOUR_SEARCH_API_KEY',
-        indexName: 'harpie',
+        apiKey: '12f80f7ed58540814810034a77d3450a',
+        indexName: 'harpieioio',
         translations: {
           placeholder: "Search for a topic"
         }
