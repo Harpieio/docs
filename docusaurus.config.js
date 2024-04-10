@@ -95,15 +95,15 @@ const config = {
             type: "docSidebar",
             sidebarId: "docSidebar",
             position: "left",
-            label: "Getting Started",
+            label: "For developers",
           },
           {
-            to: "https://harpie.io",
+            to: "https://intercom.help/harpie/en/collections/8890603-getting-started",
             label: "For individuals",
             position: "left",
           },
           {
-            to: "https://harpie.io",
+            to: "https://intercom.help/harpie/en/collections/8890597-harpie-for-enterprise",
             label: "For enterprise",
             position: "left",
           },

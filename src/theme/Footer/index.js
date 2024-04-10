@@ -34,12 +34,12 @@ function Footer() {
       </div>
       <div className="flex flex-col-reverse px-8 py-2 mx-auto md:justify-between md:items-center md:flex-row">
         <div className="flex flex-col gap-6 text-sm font-thin md:text-base md:space-between lg:flex-row">
-          <p className="mb-0">{copyright}</p>
+          <p className="mb-0 text-white">{copyright}</p>
           {links[1].items.map((link, index) => (
             <Link
               key={index}
               href={link.href}
-              className="transition duration-100 ease-in-out hover:opacity-50"
+              className="text-white transition duration-100 ease-in-out hover:opacity-80"
             >
               {link.label}
             </Link>
@@ -48,7 +48,7 @@ function Footer() {
 
         <div className="flex gap-6 py-4 mx-auto md:mx-0 md:py-0">
           {/* Discord */}
-          <Link href="https://discord.gg/WfBtxZfp85" className="h-[40px]">
+          <Link href="https://discord.gg/WfBtxZfp85" className="h-[40px] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 512"
@@ -62,11 +62,11 @@ function Footer() {
           </Link>
 
           {/* Twitter */}
-          <Link href="https://twitter.com/harpieio" className="h-[40px]">
+          <Link href="https://twitter.com/harpieio" className="h-[40px] text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
-              className="w-10 h-10 p-2 transition duration-100 ease-in-out border rounded-full hover:opacity-50"
+              className="w-10 h-10 p-2 transition duration-100 ease-in-out border rounded-full hover:opacity-80"
             >
               <path
                 fill="currentColor"
