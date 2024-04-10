@@ -7,30 +7,30 @@ export default function SuggestedArticles() {
         Suggested Articles
       </p>
 
-      <div className="grid gap-6 py-5 text-lg sm:grid-cols-2">
-        <Link href="docs/official-contract-addresses" className="flex justify-between text-[#E9D4FF]">
-            <p>Official Contract Addresses</p>
-            <p>›</p>
+      <div className="grid gap-2 py-5 text-lg sm:grid-cols-2">
+        <Link href="docs/official-contract-addresses" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Official Contract Addresses</p>
+            <p className="m-0">›</p>
         </Link>
-        <Link href="docs/connecting-to-rpc" className="flex justify-between text-[#E9D4FF]">
-            <p>Connecting to the Harpie RPC</p>
-            <p>›</p>
+        <Link href="docs/connecting-to-rpc" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Connecting to the Harpie RPC</p>
+            <p className="m-0">›</p>
         </Link>
-        <Link href="docs/where-data-is-sourced" className="flex justify-between text-[#E9D4FF]">
-            <p>Where data is sourced</p>
-            <p>›</p>
+        <Link href="docs/where-data-is-sourced" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Where data is sourced</p>
+            <p className="m-0">›</p>
         </Link>
-        <Link href="docs/background-check-api/usage" className="flex justify-between text-[#E9D4FF]">
-            <p>Background Check API</p>
-            <p>›</p>
+        <Link href="docs/background-check-api/usage" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Background Check API</p>
+            <p className="m-0">›</p>
         </Link>
-        <Link href="docs/transaction-scanning/usage" className="flex justify-between text-[#E9D4FF]">
-            <p>Transaction Scanning</p>
-            <p>›</p>
+        <Link href="docs/transaction-scanning/usage" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Transaction Scanning</p>
+            <p className="m-0">›</p>
         </Link>
-        <Link href="docs/newsfeed-api-example" className="flex justify-between text-[#E9D4FF]">
-            <p>Using the Harpie API to add newsfeed info</p>
-            <p>›</p>
+        <Link href="docs/newsfeed-api-example" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+            <p className="m-0">Using the Harpie API to add newsfeed info</p>
+            <p className="m-0">›</p>
         </Link>
       </div>
     </div>

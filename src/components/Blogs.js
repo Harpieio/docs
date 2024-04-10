@@ -30,7 +30,7 @@ export default function Blogs() {
             <Link
               key={idx}
               href={article.link}
-              className="flex-1 max-w-2xl p-px text-white transition duration-100 ease-in-out hover:text-white bg-gradient-to-tl to-blue-500/30 from-sky-400/30 rounded-xl hover:scale-105 min-w-80"
+              className="flex-1 max-w-2xl p-px text-white transition duration-100 ease-in-out hover:text-white bg-gradient-to-tl to-blue-500/30 from-sky-400/30 rounded-xl hover:scale-105 min-w-80 hover:no-underline"
             >
               <div className="flex flex-col h-full p-3 bg-neutral-950/95 rounded-xl">
                 <div className="relative w-full h-56">

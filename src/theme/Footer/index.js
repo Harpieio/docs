@@ -39,7 +39,7 @@ function Footer() {
             <Link
               key={index}
               href={link.href}
-              className="text-white transition duration-100 ease-in-out hover:opacity-80"
+              className="text-white transition duration-100 ease-in-out hover:opacity-80 hover:text-white hover:decoration-white/50"
             >
               {link.label}
             </Link>
@@ -48,7 +48,7 @@ function Footer() {
 
         <div className="flex gap-6 py-4 mx-auto md:mx-0 md:py-0">
           {/* Discord */}
-          <Link href="https://discord.gg/WfBtxZfp85" className="h-[40px] text-white">
+          <Link href="https://discord.gg/WfBtxZfp85" className="h-[40px] text-white hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 512"
@@ -62,7 +62,7 @@ function Footer() {
           </Link>
 
           {/* Twitter */}
-          <Link href="https://twitter.com/harpieio" className="h-[40px] text-white">
+          <Link href="https://twitter.com/harpieio" className="h-[40px] text-white hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
