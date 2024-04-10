@@ -96,7 +96,7 @@
   --ifm-color-danger-contrast-foreground: rgb(255, 235, 236);
   --ifm-menu-color: var(--ifm-color-emphasis-1000);
   --ifm-menu-link-sublist-icon-filter: brightness(0) invert(1);
-  --ifm-menu-color-active: #BA4AFF;
+  --ifm-menu-color-active: #FF00D6;
 }
 
 .navbar {
