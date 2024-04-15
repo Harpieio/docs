@@ -8,9 +8,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "The On-Chain Firewall | Harpie",
+  title: "Docs",
   tagline:
-    "Outsmart hackers and scammers by blocking their transactions before they drain your wallet. Never be a victim again.",
+    "Learn how to outsmart hackers and scammers by blocking their transactions before they drain your wallet. Never be a victim again.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
