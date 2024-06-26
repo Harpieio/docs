@@ -3,9 +3,9 @@ import Heading from "@theme/Heading";
 
 const FeatureList = [
   {
-    title: "Protection & Recovery",
+    title: "Advanced Security",
     src: require("@site/static/img/shield.png").default,
-    description: <>Edit descriptions here</>,
+    description: <>Real-time defense against scammers</>,
   },
   {
     title: "Wallet 2FA",

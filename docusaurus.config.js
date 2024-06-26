@@ -156,7 +156,7 @@ const config = {
       },
       prism: {
         theme: prismThemes.duotoneDark,
-        additionalLanguages: ["java"],
+        additionalLanguages: ["java", "solidity"],
       },
       algolia: {
         contextualSearch: false,

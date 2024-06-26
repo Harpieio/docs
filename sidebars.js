@@ -3,14 +3,39 @@
 
 const sidebars = {
   docSidebar: [
-    "official-contract-addresses",
-    "connecting-to-rpc",
+    "whitepaper",
     "where-data-is-sourced",
     {
       type: "category",
-      label: "Harpie Background Check API",
+      label: "Contracts",
       collapsed: false,
-      items: ["background-check-api/code-examples-rename", "background-check-api/usage"],
+      items: ["contracts/official-contract-addresses", "contracts/transferer", "contracts/noncustodial-vault", "contracts/audit"],
+    },
+    {
+      type: "category",
+      label: "Harpie for Enterprise",
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Background Check API",
+          collapsed: true,
+          items: [
+            "background-check-api/introduction",
+            {
+              type: "category",
+              label: "Methods",
+              collapsed: false,
+              items: [
+                "background-check-api/methods/validate-address",
+                "background-check-api/methods/validate-transaction",
+                "background-check-api/methods/get-contract-name"
+              ]
+            }
+          ]
+        },
+       
+       "background-check-api/usage"],
     },
     {
       type: "category",

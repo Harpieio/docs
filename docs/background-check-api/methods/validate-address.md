@@ -1,4 +1,4 @@
-# Code Examples
+# Validate Address
 
 ```jsx live noInline
 const project = 'Docusaurus';
