@@ -8,12 +8,8 @@ export default function SuggestedArticles() {
       </p>
 
       <div className="grid gap-2 py-5 text-lg sm:grid-cols-2">
-        <Link href="docs/official-contract-addresses" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
+        <Link href="docs/contracts/official-contract-addresses" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
             <p className="m-0">Official Contract Addresses</p>
-            <p className="m-0">›</p>
-        </Link>
-        <Link href="docs/connecting-to-rpc" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
-            <p className="m-0">Connecting to the Harpie RPC</p>
             <p className="m-0">›</p>
         </Link>
         <Link href="docs/where-data-is-sourced" className="flex justify-between text-[#E9D4FF] hover:bg-[#E9D4FF] hover:text-black rounded-md p-4 hover:no-underline">
