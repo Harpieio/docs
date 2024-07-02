@@ -36,6 +36,9 @@ Not using SSH:
 
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
+$ npm run deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+Final step: Add and save the custom url again after you've run the deploy command.
